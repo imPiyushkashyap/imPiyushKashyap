@@ -1,0 +1,30 @@
+"use client";
+
+import React from "react";
+import { Button } from "@/components/ui/button";
+
+const HeroLandingPage = () => {
+  return (
+    <section className="min-h-screen flex items-center justify-center bg-background px-6">
+      <div className="max-w-4xl text-center space-y-6">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+          Hi, I&aposm Piyush — a Full Stack Next.js Developer
+        </h1>
+
+        <p className="text-muted-foreground text-lg md:text-xl">
+          I build performant web apps With expertise in Next.js, TypeScript,
+          Payload CMS, and Vercel AI SDK and AI-driven features.
+        </p>
+
+        <div className="flex justify-center gap-4 pt-4">
+          <Button size="lg">View Projects</Button>
+          <Button variant="outline" size="lg">
+            Contact Me
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroLandingPage;

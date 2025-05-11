@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import ClientNav from "@/components/ui/client-navbar";
+import HeroFooter from "@/components/ui/heroFooter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -36,7 +37,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ClientNav />
-          {children}
+          <main>{children}</main>
+          <HeroFooter />
         </ThemeProvider>
       </body>
     </html>

@@ -22,7 +22,7 @@ export const navItems: NavItem[] = [
   { name: "Home", url: "", icon: Home },
   { name: "About", url: "", icon: User },
   { name: "Projects", url: "", icon: Briefcase },
-  { name: "Resume", url: "", icon: FileText },
+  { name: "Blogs", url: "", icon: FileText },
 ];
 
 export function NavBar({ items, className }: NavBarProps) {

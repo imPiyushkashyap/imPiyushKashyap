@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👋 Hey there, I'm Piyush Kashyap
 
-## Getting Started
+🚀 A Full Stack Developer (focused on **TypeScript** & **Next.js**)  
+🎓 BCA Graduate | 🎯 Aspiring MCA Student @ Kurukshetra University  
+🧠 Passionate about **AI Automation**, modern **web technologies**, and clean, scalable code.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Languages & Frameworks**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- TypeScript, JavaScript
+- Next.js, React
+- Tailwind CSS, ShadCN UI
+- tRPC, Prisma, Drizzle ORM
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Databases**
 
-## Learn More
+- MongoDB, Supabase, PostgreSQL
 
-To learn more about Next.js, take a look at the following resources:
+**Tools & Platforms**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Vercel, GitHub, Docker
+- n8n, Make.com (AI Automation)
+- Payload CMS, Stripe, Clerk, NextAuth, BetterAuth
+- VS Code, Fedora Linux (KDE Plasma)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧩 Projects I'm Proud Of
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🌍 Itinerary Generation CMS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with Next.js, TypeScript, ShadCN UI, MongoDB, and tRPC  
+Role: Frontend & API Developer
+
+> A content management system for generating travel itineraries. Scalable UI, backend logic.
+
+### 💼 Portfolio Revamp for a Client
+
+- Migrated from React to **Next.js**
+- Integrated **Payload CMS** for blogging
+- Automated blog publishing with **n8n** + AI
+- Streamlined content workflow, improved SEO.
+
+## 📚 Currently Learning
+
+- Deepening Docker knowledge
+- Exploring LangChain and AI SDKs
+- Experimenting with serverless architecture and multi-tenant CMS setups
+- Exploring **Fedora Linux** for development and optimization
+
+---
+
+## 📫 Let's Connect
+
+- 🌐 [Portfolio Coming Soon...]
+- 💼 [LinkedIn]
+- 📧 piyush.kashyap.in.@gmail.com
+
+---
