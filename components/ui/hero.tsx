@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { Button } from "@/components/ui/button";
 import { TextGenerateEffect } from "./textGeneration";
 const words =
   "I build performant web apps With expertise in Next.js, TypeScript, Payload CMS, Vercel AI SDK and AI-driven features.";
