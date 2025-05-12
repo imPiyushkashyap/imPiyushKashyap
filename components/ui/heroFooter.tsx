@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
-import { FaUpwork } from "react-icons/fa6";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { FaUpwork, FaXTwitter } from "react-icons/fa6";
 
 interface FooterNavItem {
   label: string;
@@ -41,7 +41,7 @@ const socialLinks: SocialLink[] = [
     label: "GitHub",
   },
   {
-    icon: Twitter,
+    icon: FaXTwitter,
     href: "https://x.com/PiyushK44808060",
     label: "Twitter",
   },
@@ -52,7 +52,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     icon: FaUpwork,
-    href: "https://www.upwork.com/freelancers/~yourprofile", // update your real profile URL
+    href: "https://www.upwork.com/freelancers/~01aaf78f140ef80cb0?mp_source=share",
     label: "Upwork",
   },
 
