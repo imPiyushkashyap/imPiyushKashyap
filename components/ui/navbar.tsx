@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { LucideIcon, Home, User, Briefcase, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "@/Components/mode-toggle";
+import { usePathname } from "next/navigation";
 
 export interface NavItem {
   name: string;
@@ -19,14 +20,14 @@ interface NavBarProps {
 }
 
 export const navItems: NavItem[] = [
-  { name: "Home", url: "", icon: Home },
-  { name: "About", url: "", icon: User },
+  { name: "Home", url: "/", icon: Home },
+  { name: "About", url: "/about", icon: User },
   { name: "Projects", url: "", icon: Briefcase },
   { name: "Blogs", url: "", icon: FileText },
 ];
 
 export function NavBar({ items, className }: NavBarProps) {
-  const [activeTab, setActiveTab] = useState(items[0].name);
+  const pathname = usePathname();
 
   return (
     <div
@@ -38,13 +39,12 @@ export function NavBar({ items, className }: NavBarProps) {
       <div className="flex items-center gap-3 bg-background/5 border border-border backdrop-blur-lg py-1 px-1 rounded-full shadow-lg">
         {items.map((item) => {
           const Icon = item.icon;
-          const isActive = activeTab === item.name;
+          const isActive = pathname === item.url;
 
           return (
             <Link
               key={item.name}
               href={item.url}
-              onClick={() => setActiveTab(item.name)}
               className={cn(
                 "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors",
                 "text-foreground/80 hover:text-primary",
@@ -55,6 +55,7 @@ export function NavBar({ items, className }: NavBarProps) {
               <span className="md:hidden">
                 <Icon size={18} strokeWidth={2.5} />
               </span>
+
               {isActive && (
                 <motion.div
                   layoutId="lamp"
