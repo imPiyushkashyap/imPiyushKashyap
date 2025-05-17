@@ -81,12 +81,20 @@ export default function TechStack() {
       color: "text-lime-300",
       bgColor: "bg-lime-900/30",
     },
+
     {
       name: "Vercel",
       icon: "▲",
       color: "text-white",
       bgColor: "bg-neutral-900/30",
     },
+    {
+      name: "PayloadCMS",
+      icon: "PC",
+      color: "text-white",
+      bgColor: "bg-neutral-900/30",
+    },
+
     {
       name: "Prisma ORM",
       icon: "PR",
@@ -325,10 +333,16 @@ export default function TechStack() {
       color: "text-blue-300",
       bgColor: "bg-blue-900/30",
     },
+    {
+      name: "PayloadCMS",
+      icon: "PC",
+      color: "text-white",
+      bgColor: "bg-neutral-900/30",
+    },
   ];
 
   return (
-    <Card className="bg-background text-foreground  p-6 space-y-8">
+    <Card className="bg-background text-foreground p-6 ">
       <CardHeader className="pb-2">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -343,18 +357,18 @@ export default function TechStack() {
         </motion.div>
       </CardHeader>
 
-      <CardContent className="space-y-6">
+      <CardContent className="space-y-6 ">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="space-y-4 bg-gray-950/50 p-4 rounded-lg border border-gray-700"
+          className="space-y-4 bg-gray-950/50 p-4 rounded-lg border  border-gray-700"
         >
           <p className="text-foreground leading-relaxed flex flex-wrap gap-1 items-center">
             My main tech stack is <TechBadge tech={mainTechStack[0]} />{" "}
-            (framework with App Router and Server Components),
+            framework with App Router and Server Actions
             <TechBadge tech={mainTechStack[1]} />,{" "}
-            <TechBadge tech={mainTechStack[2]} />, and
+            <TechBadge tech={mainTechStack[2]} /> and
             <TechBadge tech={mainTechStack[3]} /> as a styling library. I use
             <TechBadge tech={mainTechStack[4]} /> or{" "}
             <TechBadge tech={mainTechStack[5]} /> as the ORM. For data storage
@@ -367,7 +381,7 @@ export default function TechStack() {
             <TechBadge tech={mainTechStack[10]} />,{" "}
             <TechBadge tech={mainTechStack[11]} />, or
             <TechBadge tech={mainTechStack[12]} /> and manage content with
-            Payload CMS as my preferred CMS.
+            <TechBadge tech={mainTechStack[13]} /> as my preferred CMS.
           </p>
         </motion.div>
 
